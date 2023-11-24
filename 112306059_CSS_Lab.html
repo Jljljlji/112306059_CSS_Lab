@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="112306059_CSS_Lab.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first style page</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+        /* Container to center-align the menus */
+        .menu-container {
+            display: flex;
+            justify-content: space-between; /* Distribute space between the menus */
+            margin: 0; /* Set margin to zero */
+        }
+
+        /* General style for dropdown container */
+        .dropdown {
+            position: relative;
+            flex: 1; /* Distribute available space equally among the menus */
+        }
+
+        /* Style for the dropdown button */
+        .dropbtn {
+            background-color: #496ca3;
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            width: 100%; /* Set the width to 100% */
+        }
+
+        /* Style for the dropdown content */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            width: 100%; /* Set the width to 100% */
+        }
+
+        /* Style for dropdown options */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* Show the dropdown content when hovering over the dropdown button */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: skyblue;  text-align: center;color: white;">
+        <br><h1>My first style page</h1>
+        <p>Welcome to my homepage!</p>
+        <p>If you're looking for something fun</p>
+        <p>There is nothing in here:)</p><br>
+    </div>
+
+    <div class="menu-container">
+
+
+        <div class="dropdown">
+            <button class="dropbtn">Home</button>
+            <div class="dropdown-content">
+                <a href="#">Home1</a>
+                <a href="#">Home2</a>
+                <a href="#">Home3</a>
+            </div>
+        </div>
+
+
+        <div class="dropdown">
+            <button class="dropbtn">About</button>
+            <div class="dropdown-content">
+                <a href="#">About1</a>
+                <a href="#">About2</a>
+                <a href="#">About3</a>
+            </div>
+        </div>
+
+        <!-- Third Dropdown Menu -->
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#">Service1</a>
+                <a href="#">Service2</a>
+                <a href="#">Service3</a>
+            </div>
+        </div>
+
+
+        <div class="dropdown">
+            <button class="dropbtn">Contact</button>
+            <div class="dropdown-content">
+                <a href="#">Contact1</a>
+                <a href="#">Contact2</a>
+                <a href="#">Contact3</a>
+            </div>
+        </div>
+
+    </div>
+    <div>
+        <nav>
+            <ul class="navbar">
+                <li>Home</li>
+                <li>About</li>
+                <li>Service</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

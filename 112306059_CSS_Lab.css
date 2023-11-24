@@ -1,0 +1,27 @@
+.navbar{
+    position: relative;
+    top: 40px;
+    left: 20px;
+    width: 100px;
+}
+
+h1{font-family: arial, sans-serif;}
+body {
+  background-color: lightpink;
+  color: black;
+}
+@media screen and (min-width: 700px) {
+  body {
+    background-color: #e1e8f2;
+    color: !important;
+}
+}
+
+@media print{
+    body {
+        font-size: 12px;
+        color: black;
+    }
+}
+li.nodec{text.text-decoration: none;}
+li:hover{color: red;}
